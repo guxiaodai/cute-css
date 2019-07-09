@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>标签效果</title>
+    <style>
+      .tag {
+        border: 15px solid red;
+        /* border-top-color: transparent; */
+        border-bottom-color: transparent;
+        width: 0;
+        padding-top: 10px;
+        position: relative;
+      }
+      .tag:after {
+        content: '推荐';
+        position: absolute;
+        font-size: 12px;
+        width: 30px;
+        top: -10px;
+        left: -12px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tag"></div>
+  </body>
+</html>
